@@ -16,9 +16,9 @@ This project demonstrates an automated CI/CD pipeline using modern DevOps tools.
 ---
 
 ##  Pipeline Flow
--Code pushed to GitHub 
--GitHub Actions → Runs tests & builds Docker images
--Jenkins → Pulls code & deploys using Docker Compose
+- Code pushed to GitHub 
+- GitHub Actions → Runs tests & builds Docker images
+- Jenkins → Pulls code & deploys using Docker Compose
 
 ##  GitHub Actions
 -Runs on every push to main
