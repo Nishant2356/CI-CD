@@ -1,28 +1,30 @@
-Problem 1 — CI/CD Pipeline Automation
+#  Problem 1 — CI/CD Pipeline Automation
 
-Tools: Jenkins, Docker, GitHub Actions
+---
 
-1.Pipeline Flow
+##  Pipeline Overview
 
-Code pushed to GitHub
-GitHub Actions runs tests + builds Docker images
-Jenkins pulls and deploys via docker compose
+This project demonstrates an automated CI/CD pipeline using modern DevOps tools.
 
+---
 
-2.GitHub Actions
+##  Tools Used
+- Jenkins  
+- Docker  
+- GitHub Actions  
 
+---
+
+##  Pipeline Flow
+
+```text
+Code pushed to GitHub 
+        ↓
+GitHub Actions → Runs tests & builds Docker images
+        ↓
+Jenkins → Pulls code & deploys using Docker Compose
+
+**  GitHub Actions**
 Runs on every push to main
- 1: Install → Test → Build Docker images
- 2: Full integration test with docker compose
-
-
-3.Jenkins
-
-Pipeline defined in Jenkinsfile
-Stages: Checkout → Install & Test → Build → Deploy
-Access: 
-
-4.CI/CD Links
-
-GitHub Actions: https://github.com/Trackpulse828/CI-CD-Pipeline-Automation.git
-Jenkinsfile: ./Jenkinsfile
+Job 1: Install → Test → Build Docker images
+Job 2: Full integration test with docker compose
