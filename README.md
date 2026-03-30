@@ -22,8 +22,8 @@ This project demonstrates an automated CI/CD pipeline using modern DevOps tools.
 
 ##  GitHub Actions
 - Runs on every push to main
--  1: Install → Test → Build Docker images
-- Job 2: Full integration test with docker compose
+-  Install → Test → Build Docker images
+-  Full integration test with docker compose
 
 ##  Jenkins
 - Pipeline defined in Jenkinsfile
