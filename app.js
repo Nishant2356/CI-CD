@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 app.get("/", (req, res) => {
-  res.send("CI/CD working for AspireX🚀");
+  res.send("CI/CD working🚀");
 });
 
 // Health check (important for deployment platforms)
