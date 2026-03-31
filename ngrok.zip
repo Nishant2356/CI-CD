@@ -1,0 +1,170 @@
+ <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vi Alert: Suspicious Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-image: url("/desktop-bg.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.11);
+      z-index: -1;
+    }
+
+    .vi-alert-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 16px;
+    }
+
+    .vi-alert-page-inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .vi-alert-logo img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .vi-alert-content {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    .vi-alert-heading {
+      font-family: "ViBold", "Helvetica", "Arial", sans-serif;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .vi-alert-description {
+      font-family: "ViRegular", "Helvetica", "Arial", sans-serif;
+      font-size: 18px;
+      color: #fff;
+      font-weight: normal;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .shield {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .shield img {
+      width: 200px;
+      max-width: 80%;
+      filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.6));
+    }
+
+    .vi-alert-footer-text {
+      font-family: "ViRegular", "Helvetica", "Arial", sans-serif;
+      max-width: 453px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    .vi-alert-footer-text span {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .vi-alertfooter {
+      margin: 46px 69px 0;
+    }
+
+    .vi-alert-footer-subtext {
+      font-family: "ViRegular", "Helvetica", "Arial", sans-serif;
+      opacity: 0.5;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1.2;
+      text-align: center;
+      color: #fff;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .vi-alert-logo img {
+        margin-top: 30px;
+        width: 107px;
+        height: 107px;
+      }
+
+      .vi-alert-heading {
+        font-size: 24px;
+        margin: 0 0 8px;
+      }
+
+      .vi-alert-description {
+        font-size: 14px;
+      }
+
+      .vi-alertfooter {
+        margin: 46px 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="vi-alert-page-wrapper">
+    <div class="vi-alert-page-inner-wrapper">
+      <div class="vi-alert-logo">
+        <img src="/vi-protect-logo.webp" alt="Vi Protect" />
+      </div>
+
+      <div class="vi-alert-content">
+        <h1 class="vi-alert-heading">Vi Alert: Suspicious Site</h1>
+        <p class="vi-alert-description">
+          This site could be malicious. Hence we have blocked it to protect you
+          from a potential scam and fraud.
+        </p>
+      </div>
+    </div>
+    <footer class="vi-alertfooter">
+      <p class="vi-alert-footer-text">
+To raise a query email us with the site link & your Vi mobile number at
+        <span>spam.grievance@vodafoneidea.com</span>
+      </p>
+      <p class="vi-alert-footer-subtext">
+        &#169; Vodafone Idea Limited
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
